@@ -5,11 +5,11 @@ import authRoutes from "./routes/auth.route.js";
 import "./config/db.js";
 import dotenv from "dotenv";
 import cors from "cors";
-app.use(cors());
 
 //settings
-dotenv.config(); // Carga variables desde .env
+dotenv.config();
 const app = express();
+app.use(cors());
 app.set("PORT", 5000);
 
 // middlewares

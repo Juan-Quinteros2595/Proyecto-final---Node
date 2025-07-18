@@ -13,7 +13,6 @@ const getProducts = async (req, res) => {
 const createProduct = async (req, res) => {
   try {
     const { nombre, precio, disponible } = req.body;
-    // validar campos
     const newProduct = {
       nombre,
       precio: +precio,
